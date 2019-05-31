@@ -6,12 +6,23 @@ package net.herbertkb.wumpus;
 
 public class Cave implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Cave() {
-    }
+	private java.util.List<net.herbertkb.wumpus.Room> rooms;
 
+	public Cave() {
+	}
 
+	public java.util.List<net.herbertkb.wumpus.Room> getRooms() {
+		return this.rooms;
+	}
 
+	public void setRooms(java.util.List<net.herbertkb.wumpus.Room> rooms) {
+		this.rooms = rooms;
+	}
+
+	public Cave(java.util.List<net.herbertkb.wumpus.Room> rooms) {
+		this.rooms = rooms;
+	}
 
 }
