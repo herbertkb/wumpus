@@ -6,12 +6,23 @@ package net.herbertkb.wumpus;
 
 public class PIt implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public PIt() {
-    }
+	private int roomId;
 
+	public PIt() {
+	}
 
+	public int getRoomId() {
+		return this.roomId;
+	}
 
+	public void setRoomId(int roomId) {
+		this.roomId = roomId;
+	}
+
+	public PIt(int roomId) {
+		this.roomId = roomId;
+	}
 
 }
