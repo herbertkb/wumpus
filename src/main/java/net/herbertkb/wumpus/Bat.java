@@ -6,12 +6,23 @@ package net.herbertkb.wumpus;
 
 public class Bat implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Bat() {
-    }
+	private int roomId;
 
+	public Bat() {
+	}
 
+	public int getRoomId() {
+		return this.roomId;
+	}
 
+	public void setRoomId(int roomId) {
+		this.roomId = roomId;
+	}
+
+	public Bat(int roomId) {
+		this.roomId = roomId;
+	}
 
 }
