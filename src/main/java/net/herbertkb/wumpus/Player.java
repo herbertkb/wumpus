@@ -6,12 +6,33 @@ package net.herbertkb.wumpus;
 
 public class Player implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Player() {
-    }
+	private int roomId;
+	private int arrowsLeft;
 
+	public Player() {
+	}
 
+	public int getRoomId() {
+		return this.roomId;
+	}
 
+	public void setRoomId(int roomId) {
+		this.roomId = roomId;
+	}
+
+	public int getArrowsLeft() {
+		return this.arrowsLeft;
+	}
+
+	public void setArrowsLeft(int arrowsLeft) {
+		this.arrowsLeft = arrowsLeft;
+	}
+
+	public Player(int roomId, int arrowsLeft) {
+		this.roomId = roomId;
+		this.arrowsLeft = arrowsLeft;
+	}
 
 }
