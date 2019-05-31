@@ -6,12 +6,23 @@ package net.herbertkb.wumpus;
 
 public class Wumpus implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Wumpus() {
-    }
+	private int roomId;
 
+	public Wumpus() {
+	}
 
+	public int getRoomId() {
+		return this.roomId;
+	}
 
+	public void setRoomId(int roomId) {
+		this.roomId = roomId;
+	}
+
+	public Wumpus(int roomId) {
+		this.roomId = roomId;
+	}
 
 }
